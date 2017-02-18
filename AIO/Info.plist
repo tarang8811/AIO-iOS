@@ -28,6 +28,23 @@
 	<array>
 		<string>armv7</string>
 	</array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>SF-UT-Text-Bold.otf</string>
+        <string>SF-UT-Text-BoldItalic.otf</string>
+        <string>SF-UT-Text-Heavy.otf</string>
+        <string>SF-UT-Text-HeavyItalic.otf</string>
+        <string>SF-UT-Text-Light.otf</string>
+        <string>SF-UT-Text-LightItalic.otf</string>
+        <string>SF-UT-Text-Medium.otf</string>
+        <string>SF-UT-Text-MediumItalic.otf</string>
+        <string>SF-UT-Text-Regular.otf</string>
+        <string>SF-UT-Text-RegularItalic.otf</string>
+        <string>SF-UT-Text-Semibold.otf</string>
+        <string>SF-UT-Text-SemiboldItalic.otf</string>
+        <string>SF-UT-Text-Ultrathin.otf</string>
+        <string>SF-UT-Text-UltrathinItalic.otf</string>
+    </array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

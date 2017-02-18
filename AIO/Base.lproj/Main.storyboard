@@ -1,14 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Bold.otf">
+            <string>SFUIText-Bold</string>
+        </array>
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AIO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +28,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV5-8G-5UL">
+                                <rect key="frame" x="110" y="614" width="154" height="33"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                                <state key="normal" title="Create a new Team">
+                                    <color key="titleColor" red="0.2627450980392157" green="0.58431372549019611" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createTeam:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S6a-r9-dM6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fn-UL-nxX">
+                                <rect key="frame" x="20" y="554" width="335" height="44"/>
+                                <color key="backgroundColor" red="0.2627450980392157" green="0.58431372549019611" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wfo-ha-8Yw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="18"/>
+                                <state key="normal" title="Sign in to an existing team">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfx-SV-umn"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1io-8f-jvQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="485"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3CH-jZ-Wpx">
+                                <rect key="frame" x="168" y="501" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Fn-UL-nxX" secondAttribute="trailing" constant="20" id="1RB-uZ-DJp"/>
+                            <constraint firstItem="1io-8f-jvQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7z9-Lv-S5m"/>
+                            <constraint firstItem="8Fn-UL-nxX" firstAttribute="top" secondItem="3CH-jZ-Wpx" secondAttribute="bottom" constant="16" id="BDd-s0-wAs"/>
+                            <constraint firstItem="1io-8f-jvQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hp2-ae-aTp"/>
+                            <constraint firstItem="8Fn-UL-nxX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vlo-jI-Smc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eV5-8G-5UL" secondAttribute="bottom" constant="20" id="aBq-pH-Jrb"/>
+                            <constraint firstItem="eV5-8G-5UL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nyR-Rd-Oww"/>
+                            <constraint firstItem="3CH-jZ-Wpx" firstAttribute="top" secondItem="1io-8f-jvQ" secondAttribute="bottom" constant="16" id="p2K-P1-5MQ"/>
+                            <constraint firstItem="3CH-jZ-Wpx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rne-75-nnI"/>
+                            <constraint firstItem="eV5-8G-5UL" firstAttribute="top" secondItem="8Fn-UL-nxX" secondAttribute="bottom" constant="16" id="sYT-AG-jgw"/>
+                            <constraint firstAttribute="trailing" secondItem="1io-8f-jvQ" secondAttribute="trailing" id="wad-JM-7Fc"/>
+                            <constraint firstItem="8Fn-UL-nxX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="zF4-Fk-laF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="createTeamButton" destination="eV5-8G-5UL" id="IA0-sl-Iy8"/>
+                        <outlet property="pageControl" destination="3CH-jZ-Wpx" id="Nwh-tu-GVX"/>
+                        <outlet property="scrollView" destination="1io-8f-jvQ" id="QCm-qB-tEX"/>
+                        <outlet property="signInButton" destination="8Fn-UL-nxX" id="40w-hh-2Yl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
