@@ -4,17 +4,16 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SF-UI-Text-Bold.otf">
-            <string>SFUIText-Bold</string>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
         </array>
-        <array key="SF-UI-Text-Regular.otf">
-            <string>SFUIText-Regular</string>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -32,37 +31,37 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All your team communication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcs-ca-dPu">
-                    <rect key="frame" x="56" y="20" width="263" height="21.5"/>
-                    <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="18"/>
+                    <rect key="frame" x="71" y="20" width="234.5" height="22"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in one place, instantly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbD-qR-54H">
-                    <rect key="frame" x="95.5" y="47.5" width="185" height="21.5"/>
-                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="18"/>
+                    <rect key="frame" x="102.5" y="48" width="171" height="22"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="searchable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DK-wc-RDf">
-                    <rect key="frame" x="142" y="75" width="93" height="21.5"/>
-                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="18"/>
+                    <rect key="frame" x="146.5" y="76" width="84" height="22"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard1-1" translatesAutoresizingMaskIntoConstraints="NO" id="U7z-3r-PVT">
-                    <rect key="frame" x="20" y="106.5" width="335" height="100"/>
+                    <rect key="frame" x="20" y="108" width="335" height="100"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="U7z-3r-PVT" secondAttribute="height" multiplier="67:20" id="qTl-oN-gEu"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard1-2" translatesAutoresizingMaskIntoConstraints="NO" id="yc2-lu-EeR">
-                    <rect key="frame" x="30" y="216" width="355" height="106"/>
+                    <rect key="frame" x="30" y="217.5" width="355" height="106"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="yc2-lu-EeR" secondAttribute="height" multiplier="67:20" id="rwQ-Sr-ShJ"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard1-3" translatesAutoresizingMaskIntoConstraints="NO" id="w5c-fw-al1">
-                    <rect key="frame" x="20" y="332" width="335" height="100"/>
+                    <rect key="frame" x="20" y="333.5" width="335" height="100"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="w5c-fw-al1" secondAttribute="height" multiplier="67:20" id="Bcs-X3-g0d"/>
                     </constraints>

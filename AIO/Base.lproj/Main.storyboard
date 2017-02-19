@@ -4,16 +4,22 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SF-UI-Text-Bold.otf">
-            <string>SFUIText-Bold</string>
+        <array key="Lato-Heavy.ttf">
+            <string>Lato-Heavy</string>
         </array>
-        <array key="SF-UI-Text-Regular.otf">
-            <string>SFUIText-Regular</string>
+        <array key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
         </array>
     </customFonts>
     <scenes>
@@ -30,9 +36,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV5-8G-5UL">
-                                <rect key="frame" x="110" y="614" width="154" height="33"/>
-                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
-                                <state key="normal" title="Create a new Team">
+                                <rect key="frame" x="117" y="614" width="140" height="33"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <state key="normal" title="Create a new team">
                                     <color key="titleColor" red="0.2627450980392157" green="0.58431372549019611" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -45,12 +51,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="wfo-ha-8Yw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Lato-Heavy" family="Lato" pointSize="18"/>
                                 <state key="normal" title="Sign in to an existing team">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfx-SV-umn"/>
+                                    <segue destination="gXg-67-GGw" kind="presentation" id="jVY-Py-MIw"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1io-8f-jvQ">
@@ -87,7 +94,130 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="740" y="24"/>
+        </scene>
+        <!--Team Domain View Controller-->
+        <scene sceneID="fwg-na-4x3">
+            <objects>
+                <viewController id="mEd-xY-Nj9" customClass="TeamDomainViewController" customModule="AIO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TqK-HJ-XIW"/>
+                        <viewControllerLayoutGuide type="bottom" id="sHd-2f-aXH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JOk-3q-Z8j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Domain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-Pf-L8M">
+                                <rect key="frame" x="16" y="147" width="72.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="team-name.slack.com" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="zrD-7S-CA5">
+                                <rect key="frame" x="16" y="173.5" width="343" height="21"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the address you use to sign in to Slack." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yu-PN-qzI">
+                                <rect key="frame" x="16" y="202.5" width="343" height="16"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaM-bb-tvT">
+                                <rect key="frame" x="16" y="324.5" width="146" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="a43-bq-WND"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                                <state key="normal" title="Don't know your domain?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuN-Q9-UfN">
+                                <rect key="frame" x="16" y="348.5" width="146" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="2A0-tY-IxM"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc4-gU-V4K">
+                                <rect key="frame" x="326" y="30.5" width="33" height="30"/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="15"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextVC:" destination="mEd-xY-Nj9" eventType="touchUpInside" id="WUV-km-mSy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qer-en-yZ0">
+                                <rect key="frame" x="16" y="28" width="30" height="35"/>
+                                <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="19"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="mEd-xY-Nj9" eventType="touchUpInside" id="u6b-4Z-zmT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4248703247630119" green="0.79087118370193388" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qer-en-yZ0" firstAttribute="top" secondItem="TqK-HJ-XIW" secondAttribute="bottom" constant="8" id="8IM-nV-xup"/>
+                            <constraint firstItem="9BW-Pf-L8M" firstAttribute="top" secondItem="TqK-HJ-XIW" secondAttribute="bottom" constant="127" id="E6R-fS-vCJ"/>
+                            <constraint firstItem="zrD-7S-CA5" firstAttribute="trailing" secondItem="JOk-3q-Z8j" secondAttribute="trailingMargin" id="EKu-eC-iKF"/>
+                            <constraint firstItem="Qer-en-yZ0" firstAttribute="leading" secondItem="JOk-3q-Z8j" secondAttribute="leadingMargin" id="L1c-mb-iQV"/>
+                            <constraint firstItem="9Yu-PN-qzI" firstAttribute="top" secondItem="zrD-7S-CA5" secondAttribute="bottom" constant="8" id="LDr-08-zjD"/>
+                            <constraint firstItem="vuN-Q9-UfN" firstAttribute="trailing" secondItem="uaM-bb-tvT" secondAttribute="trailing" id="N72-Ql-jXu"/>
+                            <constraint firstItem="9Yu-PN-qzI" firstAttribute="trailing" secondItem="JOk-3q-Z8j" secondAttribute="trailingMargin" id="QJT-BB-62F"/>
+                            <constraint firstItem="vuN-Q9-UfN" firstAttribute="leading" secondItem="JOk-3q-Z8j" secondAttribute="leadingMargin" id="Sop-dk-lXS"/>
+                            <constraint firstItem="Gc4-gU-V4K" firstAttribute="trailing" secondItem="JOk-3q-Z8j" secondAttribute="trailingMargin" id="dcl-Rr-KdF"/>
+                            <constraint firstItem="9BW-Pf-L8M" firstAttribute="leading" secondItem="JOk-3q-Z8j" secondAttribute="leading" constant="16" id="eLz-b3-mut"/>
+                            <constraint firstItem="vuN-Q9-UfN" firstAttribute="top" secondItem="uaM-bb-tvT" secondAttribute="bottom" constant="1" id="jQc-Ni-R42"/>
+                            <constraint firstItem="9Yu-PN-qzI" firstAttribute="leading" secondItem="JOk-3q-Z8j" secondAttribute="leadingMargin" id="mdc-QI-80p"/>
+                            <constraint firstItem="zrD-7S-CA5" firstAttribute="top" secondItem="9BW-Pf-L8M" secondAttribute="bottom" constant="12" id="r05-Zy-g2H"/>
+                            <constraint firstItem="Gc4-gU-V4K" firstAttribute="centerY" secondItem="Qer-en-yZ0" secondAttribute="centerY" id="rvx-mT-EhX"/>
+                            <constraint firstItem="uaM-bb-tvT" firstAttribute="top" secondItem="9Yu-PN-qzI" secondAttribute="bottom" constant="106" id="uTu-uV-Edx"/>
+                            <constraint firstItem="zrD-7S-CA5" firstAttribute="leading" secondItem="JOk-3q-Z8j" secondAttribute="leadingMargin" id="x1a-cl-2SK"/>
+                            <constraint firstItem="uaM-bb-tvT" firstAttribute="leading" secondItem="JOk-3q-Z8j" secondAttribute="leadingMargin" id="zyd-o1-szT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ed2-NV-e5I"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="zrD-7S-CA5" id="LYm-a8-bpf"/>
+                        <outlet property="nextButton" destination="Gc4-gU-V4K" id="JQl-zu-LyA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ogg-HM-yde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2663.1999999999998" y="107.49625187406298"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KQw-Dr-DpC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gXg-67-GGw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Usc-Uf-cBK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mEd-xY-Nj9" kind="relationship" relationship="rootViewController" id="zQm-K3-3dc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4f-eo-ESs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="107.49625187406298"/>
         </scene>
     </scenes>
 </document>
