@@ -61,10 +61,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
             
         }
         
-        didAppear = true;
-        
-        
-        
+        didAppear = true; 
     }
     
     // Hides the top status bar
@@ -87,13 +84,14 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         
     }
 
-    // MARK : TO CHANGE WHILE CLICKING ON PAGE CONTROL
+    // change page control
     func changePage(sender: AnyObject) -> () {
         let x = CGFloat(pageControl.currentPage) * scrollView.frame.size.width
         scrollView.setContentOffset(CGPoint(x: x,y :0), animated: true)
         
     }
     
+    // called when at the end of scroll view swiping
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
         pageControl.currentPage = Int(pageNumber)
