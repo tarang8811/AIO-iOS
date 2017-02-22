@@ -11,6 +11,7 @@
 		80FFF1AF1E58E46F00122CC0 /* TeamDomainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FFF1AE1E58E46F00122CC0 /* TeamDomainViewController.swift */; };
 		8477870B8674A5B2A0E718A7 /* Pods_AIOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335853BF986B9C3ABCC55B18 /* Pods_AIOUITests.framework */; };
 		87F658CE025A5C3154AB0C2B /* Pods_AIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA4914998644BF4ADF654A5 /* Pods_AIO.framework */; };
+		8B0E35721E5DC99100474A8F /* CellDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E35711E5DC99100474A8F /* CellDetailsTableViewCell.swift */; };
 		8B303F9A1E5B2CAC007FC03D /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B303F991E5B2CAC007FC03D /* PasswordViewController.swift */; };
 		8B303F9C1E5B2D22007FC03D /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B303F9B1E5B2D22007FC03D /* EmailViewController.swift */; };
 		8B5068091E5848520002C8BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5068081E5848520002C8BF /* AppDelegate.swift */; };
@@ -48,6 +49,10 @@
 		8B50688D1E5999890002C8BF /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B50687B1E5998CC0002C8BF /* Lato-ThinItalic.ttf */; };
 		8B5068911E59AF430002C8BF /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5068901E59AF430002C8BF /* DrawerViewController.swift */; };
 		8B5068941E59AF5E0002C8BF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5068931E59AF5E0002C8BF /* ChatViewController.swift */; };
+		8B9371541E5C914300EE9BAE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9371531E5C914300EE9BAE /* SearchViewController.swift */; };
+		8B9371561E5C9D1B00EE9BAE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9371551E5C9D1B00EE9BAE /* InfoViewController.swift */; };
+		8BF899741E5DB9EC0074024D /* RightDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF899731E5DB9EC0074024D /* RightDrawerViewController.swift */; };
+		8BF899761E5DBBA40074024D /* ProfileDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF899751E5DBBA40074024D /* ProfileDetailsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,8 @@
 		7C92F1B6C33FAED8509E011F /* Pods-AIOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AIOTests/Pods-AIOTests.release.xcconfig"; sourceTree = "<group>"; };
 		80FFF1AE1E58E46F00122CC0 /* TeamDomainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDomainViewController.swift; sourceTree = "<group>"; };
 		86F0C0ED84B1282B625A6273 /* Pods_AIOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0E356A1E5DC64100474A8F /* AIO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AIO-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B0E35711E5DC99100474A8F /* CellDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		8B303F991E5B2CAC007FC03D /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		8B303F9B1E5B2D22007FC03D /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		8B5068051E5848520002C8BF /* AIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +125,10 @@
 		8B50687B1E5998CC0002C8BF /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-ThinItalic.ttf"; path = "Lato Fonts/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		8B5068901E59AF430002C8BF /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		8B5068931E59AF5E0002C8BF /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8B9371531E5C914300EE9BAE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8B9371551E5C9D1B00EE9BAE /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		8BF899731E5DB9EC0074024D /* RightDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightDrawerViewController.swift; sourceTree = "<group>"; };
+		8BF899751E5DBBA40074024D /* ProfileDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		A6483B567C947A2098E9F0B7 /* Pods-AIOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIOUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AIOUITests/Pods-AIOUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B6DBA622E16E41E6ADFCA22D /* Pods-AIOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AIOTests/Pods-AIOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC155E7E70738DAFAA255AC2 /* Pods-AIOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIOUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AIOUITests/Pods-AIOUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +172,7 @@
 				8B5068061E5848520002C8BF /* Products */,
 				D69210B290F60BD65280FD6A /* Pods */,
 				8D95FFF4CDD6FB54AAFC4100 /* Frameworks */,
+				8B0E356A1E5DC64100474A8F /* AIO-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +189,7 @@
 		8B5068071E5848520002C8BF /* AIO */ = {
 			isa = PBXGroup;
 			children = (
+				8BF899701E5DB80C0074024D /* Right Menu */,
 				8B5068921E59AF470002C8BF /* Chat Page */,
 				8B50688F1E59AF310002C8BF /* Drawer */,
 				8B50688E1E599F3B0002C8BF /* Sign In */,
@@ -280,6 +293,9 @@
 			isa = PBXGroup;
 			children = (
 				8B5068901E59AF430002C8BF /* DrawerViewController.swift */,
+				8BF899731E5DB9EC0074024D /* RightDrawerViewController.swift */,
+				8BF899751E5DBBA40074024D /* ProfileDetailsTableViewCell.swift */,
+				8B0E35711E5DC99100474A8F /* CellDetailsTableViewCell.swift */,
 			);
 			name = Drawer;
 			sourceTree = "<group>";
@@ -288,8 +304,17 @@
 			isa = PBXGroup;
 			children = (
 				8B5068931E59AF5E0002C8BF /* ChatViewController.swift */,
+				8B9371531E5C914300EE9BAE /* SearchViewController.swift */,
+				8B9371551E5C9D1B00EE9BAE /* InfoViewController.swift */,
 			);
 			name = "Chat Page";
+			sourceTree = "<group>";
+		};
+		8BF899701E5DB80C0074024D /* Right Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Right Menu";
 			sourceTree = "<group>";
 		};
 		8D95FFF4CDD6FB54AAFC4100 /* Frameworks */ = {
@@ -393,6 +418,7 @@
 					8B5068041E5848520002C8BF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = F4L7RXFB6Z;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					8B50681B1E5848530002C8BF = {
@@ -622,13 +648,18 @@
 			files = (
 				8B50680B1E5848520002C8BF /* ViewController.swift in Sources */,
 				8B5068091E5848520002C8BF /* AppDelegate.swift in Sources */,
+				8BF899761E5DBBA40074024D /* ProfileDetailsTableViewCell.swift in Sources */,
 				8B50683B1E5876B20002C8BF /* OnbaoardingViewController1.swift in Sources */,
 				8B303F9A1E5B2CAC007FC03D /* PasswordViewController.swift in Sources */,
 				8B5068431E5876CD0002C8BF /* OnboardingViewController3.swift in Sources */,
 				8B5068691E58B56F0002C8BF /* Layout.swift in Sources */,
+				8B0E35721E5DC99100474A8F /* CellDetailsTableViewCell.swift in Sources */,
+				8BF899741E5DB9EC0074024D /* RightDrawerViewController.swift in Sources */,
 				8B5068111E5848530002C8BF /* AIO.xcdatamodeld in Sources */,
 				8B303F9C1E5B2D22007FC03D /* EmailViewController.swift in Sources */,
+				8B9371541E5C914300EE9BAE /* SearchViewController.swift in Sources */,
 				8B50683F1E5876C00002C8BF /* OnboardingViewController2.swift in Sources */,
+				8B9371561E5C9D1B00EE9BAE /* InfoViewController.swift in Sources */,
 				80FFF1AF1E58E46F00122CC0 /* TeamDomainViewController.swift in Sources */,
 				8B5068941E59AF5E0002C8BF /* ChatViewController.swift in Sources */,
 				8B5068911E59AF430002C8BF /* DrawerViewController.swift in Sources */,
@@ -784,12 +815,15 @@
 			baseConfigurationReference = 7771973593CD66AD11FC04DE /* Pods-AIO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F4L7RXFB6Z;
 				INFOPLIST_FILE = AIO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.product.AIO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AIO-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -799,12 +833,14 @@
 			baseConfigurationReference = 7A7DCD161F3E219D8DD22679 /* Pods-AIO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F4L7RXFB6Z;
 				INFOPLIST_FILE = AIO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.product.AIO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AIO-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
