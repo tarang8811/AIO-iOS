@@ -12,6 +12,7 @@ class RightDrawerViewController: UIViewController,UITableViewDelegate,UITableVie
 
     @IBOutlet weak var tableview: UITableView!
     
+    // variables for the view
     var sections : [String] = ["profilePic",
                                "secondSection",
                                "thirdSection"]
@@ -31,11 +32,11 @@ class RightDrawerViewController: UIViewController,UITableViewDelegate,UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // setup table view
         self.tableview.delegate = self
         self.tableview.dataSource = self
-        
         self.tableview.backgroundColor = Layout.UIColorFromHex(colorCode: "f7f7f7")
-        //self.tableview.separatorStyle = .none
+        
         // Do any additional setup after loading the view.
     }
 
@@ -58,6 +59,7 @@ class RightDrawerViewController: UIViewController,UITableViewDelegate,UITableVie
         
         if indexPath.section == 0{
             
+            // set up the first section
             let cell : ProfileDetailsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "profileCell", for: indexPath) as! ProfileDetailsTableViewCell
             cell.profilePic.image = UIImage(named: "profilePic")
             cell.profilePic.layer.cornerRadius = 10.0
@@ -69,6 +71,7 @@ class RightDrawerViewController: UIViewController,UITableViewDelegate,UITableVie
             
         }else{
             
+            // set up rest of the sections and the rows
             let cell : CellDetailsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CellDetailsTableViewCell
             
             var sectionArray = tableDictionary[sections[indexPath.section]]
@@ -96,6 +99,7 @@ class RightDrawerViewController: UIViewController,UITableViewDelegate,UITableVie
     
        
     }
+    
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         // spacing only for the last section
