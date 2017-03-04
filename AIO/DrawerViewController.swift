@@ -28,9 +28,6 @@ class DrawerViewController: UIViewController {
     var privateChannels: [Channel] = []
     var directMessages: [String] = []
     
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
     
     override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
         
