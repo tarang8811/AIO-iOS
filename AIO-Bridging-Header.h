@@ -3,3 +3,9 @@
 //
 
 #import <SWRevealViewController/SWRevealViewController.h>
+#import <SlackTextViewController/SLKTextViewController.h>
+
+
+#import "TypingIndicatorView.h"
+#import "MessageTableViewCell.h"
+#import "MessageTextView.h"

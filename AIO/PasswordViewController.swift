@@ -45,6 +45,10 @@ class PasswordViewController: UIViewController,UITextFieldDelegate {
         
         if passwordTextField.text == "andytim"{
             self.dismiss(animated: true, completion: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                NotificationCenter.default.post(name: Notification.Name("loginComplete"), object: nil)
+            }
+            
         }else{
             // set up error label and shaking animation with vibration
             teamLabel.text = "Incorrect password, try again"

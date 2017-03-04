@@ -29,6 +29,8 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         self.scrollView.delegate = self
         
         pageControl.addTarget(self, action: Selector(("changePage:")), for: UIControlEvents.valueChanged)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.goToNextVC(notification:)), name: Notification.Name("loginComplete"), object: nil)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -108,6 +110,10 @@ class ViewController: UIViewController,UIScrollViewDelegate {
                 vc3.animate()
             }
         }
+    }
+    
+    func goToNextVC(notification: Notification){
+        self.performSegue(withIdentifier: "goToChatVC", sender: nil)
     }
 }
 

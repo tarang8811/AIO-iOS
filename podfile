@@ -6,8 +6,10 @@ target 'AIO' do
   use_frameworks!
 
   # Pods for AIO
-  pod 'SWRevealViewController', '~> 2.3'
-  
+ 	pod 'SWRevealViewController', '~> 2.3'
+  	pod "SlackTextViewController"
+	pod 'LoremIpsum', '~> 1.0'
+
   target 'AIOTests' do
     inherit! :search_paths
     # Pods for testing
